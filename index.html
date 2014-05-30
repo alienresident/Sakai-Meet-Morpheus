@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/sakai.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -42,74 +42,205 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+        <section data-background="images/conference-open.png"  data-background-size="960px 720px">
+          <h1 class="titlecard">Meet Sakai&rsquo;s MORPHEUS</h1>
+          <h2 class="titlecard">NYU | @alien_resident</h2> 
+        </section>
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+					<h1>Sakai<span class="fragment">, Meet  </span><strong class="fragment">MORPHEUS</strong></h1>
+					<h3 class="fragment morpheus-full"><span class="fragment grow">M</span>obile <span class="fragment grow">O</span>ptimized <span class="fragment grow">R</span>esponsive <span class="fragment grow">P</span>ortal for <span class="fragment grow">H</span>igher <span class="fragment grow">E</span>ducation <span class="fragment grow">U</span>sing <span class="fragment grow">S</span>ass</h3>
 				</section>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+				<section data-markdown>
+					<script type="text/template">
+					## About This Presentation
+
+I am using <code class="highlight-yellow">reveal.js</code> for my slides. They're on github   
+[https://github.com/alienresident/Sakai-Meet-Morpheus](https://github.com/alienresident/Sakai-Meet-Morpheus)
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						
 					</aside>
+        </script>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
+						
+							<img width="450" height="450" src="images/mark_reilly_profile_pic_450x450.jpg" alt="Mark Reilly" class="fragment fl">
+						
+						<p class="fr">
+							<span class="fragment"><strong>Mark Reilly</strong></span><span class="fragment">, <em>User Experience Designer</em></span> <span class="fragment">at New York University.</span>
 						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<aside class="notes">WHO: am I? [down]</aside>
 					</section>
+					
+          <section data-background="#010001">
+            <video class="stretch" data-autoplay src="images/videos/I-am-Morpheus.mp4"></video>
+            <aside class="notes">WHAT: MORPHEUS! 
+              NEO: Neoskin for 2.9 
+              TRINITY: iFrame-less portal that Dr. Chuck has been working on 
+              [down]
+            </aside>
+					</section>
+          
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+            <h2>Sakai 10</h2> 
+       
+              <span class="fragment">
+                <code>/portal</code>
+              </span><br>
+              
+              <span class="fragment">
+                <code>/reference</code>
+              </span><br>
+              
+              <span class="fragment fade-in">         
+                <span class="fragment highlight-current-blue">
+                  <code>/portal/trunk/portal-render-engine-impl/pack/src/webapp/vm/morpheus/</code>
+                </span>
+              </span><br>
+              
+              <span class="fragment fade-in">         
+                <span class="fragment highlight-current-blue">
+                  <code>/reference/trunk/library/src/webapp/skin/morpheus*</code>
+                </span>
+              </span>
+              
+              <aside class="notes">WHERE: Show me the code! [down]</aside>
 					</section>
+          
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
+						<h1>Now<em class="fragment">-ish</em></h1>
+						<p>
+              <strong class="fragment">Templates</strong> <span class="fragment">we're committed in February</span><br>
+              <strong class="fragment">Sass</strong> <span class="fragment">is under active development</span>
+            </p>
+            <aside class="notes">WHEN: can I get it? [next]</aside>
 					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+          
 				</section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Why a new _another_ new skin?
+            
+              ### __Usability Testing__ <!-- .element: class="fragment" -->
+             
+              * Pilot <!-- .element: class="fragment" -->
+              * Faculty <!-- .element: class="fragment" -->
+              * Never used Sakai <!-- .element: class="fragment" -->
+              * Remote Testing <!-- .element: class="fragment" -->
+            
+            </script>
+            <aside class="notes">WHY: Usability Testing [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## Usability Issues
+            
+              * Place Finding <!-- .element: class="fragment" -->
+              * Navigation <!-- .element: class="fragment" -->
+              * Messaging <!-- .element: class="fragment" -->
+              * Hiding & Showing Items <!-- .element: class="fragment" -->
+            
+            </script>
+            <aside class="notes">WHY: Usability Issues [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## Usability Issues _Solutions_
+             
+              * Quick Fixes <!-- .element: class="fragment" -->
+              * Long Term Fixes <!-- .element: class="fragment" -->
+                * New Icons <!-- .element: class="fragment" -->
+                * iframes: Fix Mental Model <!-- .element: class="fragment" -->
+                * Group Navigation Items by Function <!-- .element: class="fragment" -->
+                * Better Messaging <!-- .element: class="fragment" -->
+            
+            </script>
+            <aside class="notes">WHY: Usability Issues Solutions [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## User Interface
+              * Organized <!-- .element: class="fragment" -->
+              * Modular <!-- .element: class="fragment" -->
+              * Reusable <!-- .element: class="fragment" -->    
+              
+              I needed to use a CSS preprocessor <!-- .element: class="fragment" -->    
+              
+              Sass was my choice <!-- .element: class="fragment" -->
+            
+            </script>
+            <aside class="notes">WHY: User Interface [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## Responsive Design
+              * Fluid Images <!-- .element: class="fragment" -->
+              * Fluid Grids <!-- .element: class="fragment" -->
+              * Media Queries <!-- .element: class="fragment" -->
+              
+            </script>
+            <aside class="notes">WHY: Responsive Design [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## Responsive Design _Issues_
+              * HTML Source Order <!-- .element: class="fragment" -->
+              * Div-itis: Convoluted Markup <!-- .element: class="fragment" -->
+              * Lack of Classes <!-- .element: class="fragment" -->
+              * Upgrading?<!-- .element: class="fragment" -->
+              
+            </script>
+            <aside class="notes">WHY: Responsive Design Issues [next]</aside>
+          </section>
+        </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## New VM Templates
+              * HTML 5 <!-- .element: class="fragment" -->
+              * Simplify code <!-- .element: class="fragment" -->
+              * Semantics <!-- .element: class="fragment" -->
+              
+            </script>
+            <aside class="notes">HOW: [down]</aside>
+          </section>
+
+          <section data-markdown>
+            <script type="text/template">
+              ## HTML 5
+              
+              ```
+              
+              ```
+              
+            </script>
+            <aside class="notes">HOW: [next]</aside>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## HTML 5 _contd_
+              
+              ### IE 8 CSS files
+              ```
+              
+              ```
+              
+            </script>
+            <aside class="notes">HOW: [next]</aside>
+          </section>
+        </section>
 
 				<section>
 					<h2>Works in Mobile Safari</h2>
@@ -371,11 +502,12 @@ function linkify( selector ) {
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
+				//transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        transition: 'zoom',
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
 				// parallaxBackgroundSize: '2100px 900px',
+        
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
