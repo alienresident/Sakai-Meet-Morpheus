@@ -119,19 +119,13 @@ $linkColor: $link-color;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $magenta;
 
-
-// Headings
-$headingMargin: 0 0 20px 0;
-$headingFont: 'open_sanscondensed_light', Impact, sans-serif;
-$headingLineHeight: 0.9em;
-$headingLetterSpacing: 0.02em;
 $headingTextTransform: none;
-$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
-$heading1TextShadow: $headingTextShadow;
+$headingFont: 'open_sanscondensed_light', Impact, sans-serif;
+// Headings
 
 
 //.reveal h1 strong {
-//  font-family: 'open_sans_condensedbold', Impact, sans-serif;
+//  font-family: 'open_sans_condensedbold';
 //}
 .reveal h1.titlecard, 
 .reveal h2.titlecard {
@@ -162,6 +156,10 @@ $heading1TextShadow: $headingTextShadow;
     
     em {
       font-family: 'open_sansCnLtIt';
+    }
+    
+    strong {
+      font-family: 'open_sans_condensedbold';
     }
   }
   
