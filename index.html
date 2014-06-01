@@ -935,7 +935,6 @@ I am using <code class="highlight-yellow">reveal.js</code> for my slides. They'r
             <aside class="notes">Getting All MORPHEUS: [down]</aside>
           </section>
           
-          
           <section data-markdown>
             <script type="text/template">
               ## MORPHEUS
@@ -948,7 +947,6 @@ I am using <code class="highlight-yellow">reveal.js</code> for my slides. They'r
               2. morpheus-examp-u <!-- .element: class="fragment" -->   
               3. morpheus-rtl  <!-- .element: class="fragment" -->   
               
-              
               `morpheus-master/sass/themes/` <!-- .element: class="fragment" -->
               
               <pre class="fragment"><code contenteditable>_morpheus-default.scss
@@ -959,9 +957,62 @@ I am using <code class="highlight-yellow">reveal.js</code> for my slides. They'r
               <pre class="fragment"><code contenteditable>_morpheus-nyu.scss</code></pre>
               
             </script>
-            <aside class="notes">Getting All MORPHEUS: [down]</aside>
+            <aside class="notes">Adding a custom theme to MORPHEUS: [down]</aside>
           </section>
           
+          <section data-markdown>
+            <script type="text/template">
+              ## MORPHEUS
+              
+              ### Custom themes <!-- .element: class="fragment" -->
+              
+              Examples of Basic Customizations. <!-- .element: class="fragment" -->    
+              
+              1. Institution Colors <!-- .element: class="fragment" -->   
+              2. Logos <!-- .element: class="fragment" -->   
+              3. Button Colors  <!-- .element: class="fragment" -->   
+              
+              `../sass/themes/_morpheus-default.scss` <!-- .element: class="fragment" -->
+              
+              <pre class="fragment"><code contenteditable>$primary-color:  #009dce;
+              $black-value: #333;
+              </code></pre>
+              
+              <pre class="fragment"><code contenteditable>$masthead-image: "my-U-logo.png";</code></pre>
+              
+              <pre class="fragment"><code contenteditable>$button-gradient-stop-1: $primary-color;
+              $button-gradient-stop-2: shade($button-gradient-stop-1, 3%);</code></pre>
+              
+            </script>
+            <aside class="notes">Adding a custom theme to MORPHEUS: [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## MORPHEUS
+              
+              ### Custom themes <!-- .element: class="fragment" -->
+              
+              Example of More Advanced Customizations. <!-- .element: class="fragment" -->    
+              
+              1. Webfonts <!-- .element: class="fragment" -->   
+              2. Icon Fonts <!-- .element: class="fragment" -->   
+              3. Custom Modules  <!-- .element: class="fragment" -->   
+              
+              `../sass/themes/_morpheus-default.scss` <!-- .element: class="fragment" -->
+              
+              <pre class="fragment"><code contenteditable>$fontstack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              $webfont-name: 'Open Sans';
+              </code></pre>
+              
+              <pre class="fragment"><code contenteditable>$masthead-image: "my-U-logo.png";</code></pre>
+              
+              <pre class="fragment"><code contenteditable>$button-gradient-stop-1: $primary-color;
+              $button-gradient-stop-2: shade($button-gradient-stop-1, 3%);</code></pre>
+              
+            </script>
+            <aside class="notes">Adding a custom theme to MORPHEUS: [down]</aside>
+          </section>
           
         </section>
         
