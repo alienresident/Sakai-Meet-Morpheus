@@ -127,6 +127,12 @@ $headingFont: 'open_sanscondensed_light', Impact, sans-serif;
 //.reveal h1 strong {
 //  font-family: 'open_sans_condensedbold';
 //}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
 .reveal h1.titlecard, 
 .reveal h2.titlecard {
   position: relative;
@@ -152,7 +158,9 @@ $headingFont: 'open_sanscondensed_light', Impact, sans-serif;
   }
   
   h1,
-  h2  {
+  h2,
+  h3  {
+    line-height: 1em;
     
     em {
       font-family: 'open_sansCnLtIt';
@@ -187,7 +195,3 @@ $headingFont: 'open_sanscondensed_light', Impact, sans-serif;
     text-align: left;
   }
 }
-
-// Theme template ------------------------------
-@import "../template/theme";
-// ---------------------------------------------

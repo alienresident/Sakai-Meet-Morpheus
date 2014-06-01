@@ -51,40 +51,6 @@ html * {
   color-profile: sRGB;
   rendering-intent: auto; }
 
-.reveal h1.titlecard,
-.reveal h2.titlecard {
-  position: relative;
-  bottom: 1em;
-  color: #333; }
-
-.reveal strong, .reveal b {
-  font-family: 'open_sanssemibold'; }
-.reveal em,
-.reveal i {
-  font-family: 'open_sansitalic';
-  font-style: normal; }
-.reveal h3 .fragment.grow.visible {
-  color: #e6d499;
-  font-family: 'open_sanssemibold'; }
-.reveal h1 em,
-.reveal h2 em {
-  font-family: 'open_sansCnLtIt'; }
-.reveal h1 strong,
-.reveal h2 strong {
-  font-family: 'open_sans_condensedbold'; }
-.reveal .highlight-yellow {
-  color: #e6d499; }
-.reveal .morpheus-full {
-  width: 77%;
-  margin: 0 auto; }
-.reveal .fl {
-  float: left; }
-.reveal .fr {
-  float: right;
-  width: 50%;
-  margin-top: 5px;
-  text-align: left; }
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -214,3 +180,43 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #5aecd1; }
+
+.reveal h1.titlecard,
+.reveal h2.titlecard {
+  position: relative;
+  bottom: 1em;
+  color: #333; }
+
+.reveal strong, .reveal b {
+  font-family: 'open_sanssemibold'; }
+.reveal em,
+.reveal i {
+  font-family: 'open_sansitalic';
+  font-style: normal; }
+.reveal h3 .fragment.grow.visible {
+  color: #e6d499;
+  font-family: 'open_sanssemibold'; }
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  line-height: 1em; }
+  .reveal h1 em,
+  .reveal h2 em,
+  .reveal h3 em {
+    font-family: 'open_sansCnLtIt'; }
+  .reveal h1 strong,
+  .reveal h2 strong,
+  .reveal h3 strong {
+    font-family: 'open_sans_condensedbold'; }
+.reveal .highlight-yellow {
+  color: #e6d499; }
+.reveal .morpheus-full {
+  width: 77%;
+  margin: 0 auto; }
+.reveal .fl {
+  float: left; }
+.reveal .fr {
+  float: right;
+  width: 50%;
+  margin-top: 5px;
+  text-align: left; }
