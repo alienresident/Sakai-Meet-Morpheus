@@ -43,8 +43,6 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
         <section data-background="images/conference-open.png"  data-background-size="960px 720px">
-          <h1 class="titlecard">Meet Sakai&rsquo;s MORPHEUS</h1>
-          <h2 class="titlecard">NYU | @alien_resident</h2> 
         </section>
 				<section>
 					<h1>Sakai<span class="fragment">, Meet  </span><strong class="fragment">MORPHEUS</strong></h1>
@@ -54,12 +52,14 @@
 				<section data-markdown>
 					<script type="text/template">
 					## About This Presentation
-
+          
+<span class="fragment">
 I am using <code class="highlight-yellow">reveal.js</code> for my slides. They're on github   
 [https://github.com/alienresident/Sakai-Meet-Morpheus](https://github.com/alienresident/Sakai-Meet-Morpheus)
-
+</span>
+          
 					<aside class="notes">
-						
+					I'll post a PDF of these slides afterwards to Lanyrd.
 					</aside>
         </script>
 				</section>
@@ -75,7 +75,9 @@ I am using <code class="highlight-yellow">reveal.js</code> for my slides. They'r
               <span class="fragment"><em>User Experience Designer</em></span><br>
               <span class="fragment">New York University.</span>
 						</p>
-						<aside class="notes">WHO: am I? [down]</aside>
+						<aside class="notes">
+              So Let's start with the 5 Ws: Who, What, Where, When, and most importantly Why
+              WHO: am I? [down]</aside>
 					</section>
 					
           <section data-background="#010001">
@@ -426,7 +428,7 @@ I am using <code class="highlight-yellow">reveal.js</code> for my slides. They'r
             <script type="text/template">
               ## SASS _contd_
               
-              ### Mixins<!-- .element: class="fragment" -->  _(arguments)_ <!-- .element: class="fragment" -->
+              ### Mixins <!-- .element: class="fragment" -->  _(arguments)_ <!-- .element: class="fragment" -->
               
               <pre class="fragment"><code contenteditable>@mixin default-type-size($color) {
                 font-size: 16px;
@@ -857,7 +859,7 @@ I am using <code class="highlight-yellow">reveal.js</code> for my slides. They'r
           
           <section data-markdown>
             <script type="text/template">
-              ## MORPHEUS<!-- .element: class="fragment" -->
+              ## MORPHEUS
                
               ### Directory Structure <!-- .element: class="fragment" -->
               
@@ -997,23 +999,129 @@ I am using <code class="highlight-yellow">reveal.js</code> for my slides. They'r
               
               1. Webfonts <!-- .element: class="fragment" -->   
               2. Icon Fonts <!-- .element: class="fragment" -->   
-              3. Custom Modules  <!-- .element: class="fragment" -->   
-              
-              `../sass/themes/_morpheus-default.scss` <!-- .element: class="fragment" -->
               
               <pre class="fragment"><code contenteditable>$fontstack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
               $webfont-name: 'Open Sans';
               </code></pre>
               
-              <pre class="fragment"><code contenteditable>$masthead-image: "my-U-logo.png";</code></pre>
+              <pre class="fragment"><code contenteditable>$icon-font-name: 'Sakai-Icon-Font';
+              $tool-icons: (sakai-motd '\f015') (sakai-schedule '\f073')  ... ; 
+              </code></pre>
               
-              <pre class="fragment"><code contenteditable>$button-gradient-stop-1: $primary-color;
-              $button-gradient-stop-2: shade($button-gradient-stop-1, 3%);</code></pre>
+              <span class="fragment">
+              Custom Icon font based off of [Font-Awesome](http://fortawesome.github.io/Font-Awesome/) using [icomoon](http://icomoon.io/). All the portal assets icluding the font SVGs will be on github `github.com/alienresident/sakai-portal-assets` 
+              </span>              
+            </script>
+            <aside class="notes">Adding a custom theme to MORPHEUS: [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## MORPHEUS
+              
+              ### Custom themes <!-- .element: class="fragment" -->
+              
+              Example of More Advanced Customizations <!-- .element: class="fragment" --> _contd_ <!-- .element: class="fragment" -->
+              
+              3\. Custom Modules  <!-- .element: class="fragment" -->   
+    
+              <pre class="fragment"><code contenteditable>@import "modules/CUSTOM_MODULE_NAME/_CUSTOM_MODULE_NAME";</code></pre>
+             
+              <pre class="fragment"><code contenteditable>../sass/modules/CUSTOM_MODULE_NAME/_CUSTOM_MODULE_NAME.scss</code></pre>
+                           
+            </script>
+            <aside class="notes">Adding a custom theme to MORPHEUS: [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## MORPHEUS
+              
+              ### Styleguides <!-- .element: class="fragment" -->
+              
+              Each skin comes with a flat HTML file that acts as a styleguide. This is also a design pattern for sakai elements.<!-- .element: class="fragment" --> 
+              
+              <span class="fragment">
+              This is where you can see your stlyed elements on one page. Here's an example from [NYU Classes](http://i5.nyu.edu/~mar22/nyuclasses/styleguide/).
+              `http://i5.nyu.edu/~mar22/nyuclasses/styleguide/`
+              </span>
+              
+              I'll be adding more Sakai components to these. <!-- .element: class="fragment" -->
               
             </script>
             <aside class="notes">Adding a custom theme to MORPHEUS: [down]</aside>
           </section>
           
+          <section data-markdown>
+            <script type="text/template">
+              ## MORPHEUS
+              
+              ### Color Schemer <!-- .element: class="fragment" -->
+              
+              One each styleguide comes with a generated color guide. These are created using one base color and uses color theory models to create a color model. Let's look at <!-- .element: class="fragment" --> [color scheme designer](http://colorschemedesigner.com/) <!-- .element: class="fragment" --> 
+              
+              <pre class="fragment"><code contenteditable>$primary-color:  #009dce;
+$black-value: #333;
+$cs-primary:            $primary-color;
+$cs-scheme:             triad;
+// Options: mono, complement, triad, tetrad, analogic, accented-analogic
+$cs-hue-offset:         60;
+
+// $colour-stack-amounts: 25%, 50%, 75%, 85%, 90%;
+
+$black:     tint-stack($black-value);
+$primary:   tint-stack(cs-primary());
+$secondary: tint-stack(cs-secondary());
+$tertiary:  tint-stack(cs-tertiary());
+$quadrary:  tint-stack(cs-quadrary()); 
+              </code></pre>
+              
+            </script>
+            <aside class="notes">Adding a custom color guide to MORPHEUS. This is based on a sass plugin called color schemer. The easiest way to get started with this : [down]</aside>
+          </section>
+          
+        </section>
+        
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Conclusion  
+      
+              ### Road Map: What's next? <!-- .element: class="fragment" -->
+      
+              1. Finish adding modules from NYU Classes code base <!-- .element: class="fragment" -->
+              2. Responsive menus for devices <!-- .element: class="fragment" -->
+              3. Responsive typography <!-- .element: class="fragment" -->
+              4. Flesh out examples skins <!-- .element: class="fragment" -->
+              5. User Testing <!-- .element: class="fragment" -->
+              6. Documentation <!-- .element: class="fragment" -->
+             
+              
+              ### Sakai 11 <!-- .element: class="fragment" -->
+              
+              7. Tools... <!-- .element: class="fragment" -->
+              8. Pattern Library <!-- .element: class="fragment" --> a mini 'bootstrap' for Sakai <!-- .element: class="fragment" -->
+              
+      
+            </script>
+            <aside class="notes">Where I go from here [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## Conclusion  
+      
+              Thanks to Gonzalo Silverio and the NYU Classes team at NYU <!-- .element: class="fragment" -->
+      
+              Questions? <!-- .element: class="fragment" -->    
+              
+              Contributors? <!-- .element: class="fragment" -->
+      
+            </script>
+            <aside class="notes">Where I go from here [down]</aside>
+          </section>
+        
+        
         </section>
         
         
