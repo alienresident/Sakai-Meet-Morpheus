@@ -1,0 +1,197 @@
+/**
+ * EdUI theme for reveal.js.
+ * Author: Mark Reilly
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../../lib/font/OpenSans-Regular-webfont.eot");
+  src: url("../../lib/font/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/OpenSans-Regular-webfont.woff") format("woff"), url("../../lib/font/OpenSans-Regular-webfont.ttf") format("truetype"), url("../../lib/font/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Bold
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url("../../lib/font/OpenSans-Semibold-webfont.eot");
+  src: url("../../lib/font/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/OpenSans-Semibold-webfont.woff") format("woff"), url("../../lib/font/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../../lib/font/OpenSans-Semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Italic
+@font-face {
+	font-family: 'open_sansitalic';
+	src: url('../../lib/font/OpenSans-Italic-webfont.eot');
+	src: url('../../lib/font/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/OpenSans-Italic-webfont.woff') format('woff'),
+		 url('../../lib/font/OpenSans-Italic-webfont.ttf') format('truetype'),
+		 url('../../lib/font/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// headers
+@font-face {
+	font-family: 'open_sanscondensed_light';
+	src: url('../../lib/font/OpenSans-CondLight-webfont.eot');
+	src: url('../../lib/font/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/OpenSans-CondLight-webfont.woff') format('woff'),
+		 url('../../lib/font/OpenSans-CondLight-webfont.ttf') format('truetype'),
+		 url('../../lib/font/OpenSans-CondLight-webfont.svg#open_sanscondensed_light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// headers bold 
+@font-face {
+	font-family: 'open_sans_condensedbold';
+	src: url('../../lib/font/OpenSans-CondBold-webfont.eot');
+	src: url('../../lib/font/OpenSans-CondBold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/OpenSans-CondBold-webfont.woff') format('woff'),
+		 url('../../lib/font/OpenSans-CondBold-webfont.ttf') format('truetype'),
+		 url('../../lib/font/OpenSans-CondBold-webfont.svg#open_sans_condensedbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// headers italic 
+@font-face {
+	font-family: 'open_sansCnLtIt';
+	src: url('../../lib/font/OpenSans-CondLightItalic-webfont.eot');
+	src: url('../../lib/font/OpenSans-CondLightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/OpenSans-CondLightItalic-webfont.woff') format('woff'),
+		 url('../../lib/font/OpenSans-CondLightItalic-webfont.ttf') format('truetype'),
+		 url('../../lib/font/OpenSans-CondLightItalic-webfont.svg#open_sansCnLtIt') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+// Solarized colors
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+
+// Custom colors
+$sakai-blue:#006483;
+$highlight-yellow: #e6d499;
+$text-color: #C2DADD;
+$link-color: #5AECD1;
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: $text-color;
+$headingColor: $base2;
+$headingTextShadow: none;
+$backgroundColor: $sakai-blue;
+$linkColor: $link-color;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: $magenta;
+
+$headingTextTransform: none;
+$headingFont: 'open_sanscondensed_light', Impact, sans-serif;
+// Headings
+
+
+//.reveal h1 strong {
+//  font-family: 'open_sans_condensedbold';
+//}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+.reveal h1.titlecard, 
+.reveal h2.titlecard {
+  position: relative;
+  bottom: 1em;
+  color: #333;
+}
+
+.reveal { 
+
+  strong, b {
+    font-family: 'open_sanssemibold';
+  }
+
+  em,
+  i {
+    font-family: 'open_sansitalic';
+    font-style: normal;
+  }
+
+  h3 .fragment.grow.visible {
+    color: #e6d499;
+    font-family: 'open_sanssemibold';
+  }
+  
+  h1,
+  h2,
+  h3  {
+    line-height: 1em;
+    
+    em {
+      font-family: 'open_sansCnLtIt';
+    }
+    
+    strong {
+      font-family: 'open_sans_condensedbold';
+    }
+  }
+  
+  .highlight-yellow {
+    color: $highlight-yellow;
+  }
+  
+  // Specific Slides
+   
+  // break line on tag
+  .morpheus-full {
+    width: 78%;
+    margin: 0 auto;
+  }
+  
+  // WHO image and description
+  .fl {
+    float: left;
+  }
+  
+  .fr {
+    float: right;
+    width: 50%;
+    margin-top: 5px;
+    text-align: left;
+  }
+}
