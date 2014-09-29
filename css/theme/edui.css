@@ -220,3 +220,5 @@ body {
   width: 50%;
   margin-top: 5px;
   text-align: left; }
+.reveal section img {
+  border: none; }
