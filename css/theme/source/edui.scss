@@ -105,16 +105,16 @@ $green:     #859900;
 
 
 // Custom colors
-$sakai-blue: #272727;
-$highlight-yellow: #1999cc;
+$background: #272727;
+$highlight-yellow: #ffc80f;
 $text-color: #1999cc;
-$link-color: #5AECD1;
+$link-color: #ffc80f;
 
 // Override theme settings (see ../template/settings.scss)
 $mainColor: $text-color;
 $headingColor: #ffc80f;
 $headingTextShadow: none;
-$backgroundColor: $sakai-blue;
+$backgroundColor: $background;
 $linkColor: $link-color;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $magenta;
