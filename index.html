@@ -1,176 +1,179 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/edui.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/edui.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        
         <section data-background="images/edui_logo2013.png"  data-background-color="#ffffff"  data-background-size="1024px 768px">
         </section>
-				<section>
-					<h1>Beyond Putting Lipstick on the Pig</h1>
-					<h3><span class="fragment">Usability Testing and Designing New UIs for Open Source Projects</span></h3>
-					<aside class="notes">
-            A personal journey</aside>
-				</section>
         
-				<section data-markdown>
-					<script type="text/template">
-					## About This Presentation
+        <section>
+          <h1>Beyond Putting Lipstick on the Pig</h1>
+          <h3><span class="fragment">Usability Testing and Designing New UIs for Open Source Projects</span></h3>
+          <aside class="notes">
+            A personal journey</aside>
+        </section>
+        
+        <section data-markdown>
+          <script type="text/template">
+          ## About This Presentation
   
-<p class="fragment">
-<span class="fragment">I am using <code class="highlight">reveal.js</code> for my slides. They're on [github](https://github.com/alienresident/reveal.js/commits/edui/beyond_putting_lipstick_on_the_pig.pdf)</span><br> 
-<span class="fragment">You can follow along on <a href="http://bit.ly/edu_pig">bit.ly/edu_pig</a></span>
-</p>
+          <p class="fragment">
+          <span class="fragment">I am using <code class="highlight">reveal.js</code> for my slides. They're on [github](https://github.com/alienresident/reveal.js/commits/edui/beyond_putting_lipstick_on_the_pig.pdf)</span><br> 
+          <span class="fragment">You can follow along on <a href="http://bit.ly/edu_pig">bit.ly/edu_pig</a></span>
+          </p>
   
-					<aside class="notes">
-					I'll post a PDF of these slides afterwards to Slideshare.
-					</aside>
+          <aside class="notes">
+          I'll post a PDF of these slides afterwards to Slideshare.
+          </aside>
         </script>
-				</section>
-				<!--section>
-					<h1>Final slides?</h1> 
-          <h3>Final slides will be either posted shortly before or directly after the presentation</h3>
-					
-					<p>
-            <strong>Attend the presentation!</strong><br>
-            <em>When?</em> Tue. Sept. 30 - 9:00-9:45 <br>
-            <em>Where?</em> Magnolia
-					</p>
-				</section-->
+        </section>
+        
         <section>
           <section data-markdown>
             <script type="text/template">
               ## What you’ll Learn
-              
+
               ### Usability <!-- .element: class="fragment" -->
-              
+
               * How to conduct usability tests  <!-- .element: class="fragment" -->
               * How to communicate the results of the tests to generate excitement and commitment to fixing issues  <!-- .element: class="fragment" -->
               * How to divide solutions into quick wins and long-term fixes  <!-- .element: class="fragment" -->
           
+              <aside class="notes">What you’ll Learn [down]</aside>
             </script>
-            <aside class="notes">What you’ll Learn [down]</aside>
-          </section> 
+          </section>
+          
           <section data-markdown>
             <script type="text/template">
               ## What you’ll Learn _contd_
-              
+
               ### Designing Web Systems <!-- .element: class="fragment" -->
 
               * The best way to organize chaos and build a foundation via a style guide and a design pattern library for developers <!-- .element: class="fragment" -->
               * How to use modular design to create a sophisticated and highly customizable skin <!-- .element: class="fragment" -->
               * How you can contribute to an open source community and share your efforts <!-- .element: class="fragment" -->
+
+              <aside class="notes">What you’ll Learn [down]</aside>
             </script>
-            <aside class="notes">What you’ll Learn [down]</aside>
           </section>
+          
           <section data-markdown>
             <script type="text/template">
               ## What you’ll Learn _contd_
-              
+
               <h3>Selling your work</span> <span class="fragment"> but</span> <span class="fragment"><strong>not</strong></span> <span class="fragment">your soul</span></h3> <!-- .element: class="fragment" -->
-              
+
               * How to get buy-in from the multitude of stakeholders, committees, and service teams without going insane <!-- .element: class="fragment" -->
               * How to bring innovation to a risk-averse IT culture without compromising the design <!-- .element: class="fragment" -->
           
+
+
+              <aside class="notes">What you’ll Learn [down]</aside>
             </script>
-            <aside class="notes">What you’ll Learn [down]</aside>
-          </section>
-        </section>
-  			<section>
-        	<section>
-					
-  						<img width="450" height="450" src="images/mark_reilly_profile_pic_450x450.jpg" alt="Mark Reilly" class="fragment fl">
-					
-  					<p class="fr">
-  						<span class="fragment"><strong>Mark Reilly</strong></span><br>
-  					</p>
-  					<aside class="notes">
-              WHO: am I? [down]</aside>
-  				</section>
-  				<section>
-					
-  						<img width="706" height="471" src="images/uxui6_1024x1024.jpg" alt="Mark Reilly" class="fragment ">
-					
-  					<p class="">
-              <span class="fragment"><em>User Experience ~ User Interface</em></span><br>
-              <span class="fragment"><a href="http://www.uistencils.com/products/ux-ui-t-shirt">UX~UI T-Shirt</a> at UIStencils.com</span>
-            
-  					</p>
-  					<aside class="notes">
-              What: do I do? [down]</aside>
-  				</section>
-          
-          <section data-markdown>
-            <script type="text/template">
-              ## Contact
-              
-              [__@alien_resident__](https://twitter.com/@alien_resident) - Twitter     
-              [__alienresident__](https://github.com/alienresident) - Github    
-              [__Mark Reilly__](http://www.linkedin.com/in/markareilly/) - LinkedIn   
-              
-              
-            </script>
-            <aside class="notes">Background [down]
-              How to get in Touch. </aside>
           </section>
           
         </section>
 
         <section>
+          
+          <section>
+          
+              <img width="450" height="450" src="images/mark_reilly_profile_pic_450x450.jpg" alt="Mark Reilly" class="fragment fl">
+          
+            <p class="fr">
+              <span class="fragment"><strong>Mark Reilly</strong></span><br>
+            </p>
+
+            <aside class="notes">WHO: am I? [down]</aside>
+          </section>
+          
+          <section>
+          
+              <img width="706" height="471" src="images/uxui6_1024x1024.jpg" alt="Mark Reilly" class="fragment ">
+          
+            <p class="">
+              <span class="fragment"><em>User Experience ~ User Interface</em></span><br>
+              <span class="fragment"><a href="http://www.uistencils.com/products/ux-ui-t-shirt">UX~UI T-Shirt</a> at UIStencils.com</span>
+
+            </p>
+
+            <aside class="notes">What: do I do? [down]</aside>
+          </section>
+          
+          <section data-markdown>
+            <script type="text/template">
+              ## Contact
+
+              [__@alien_resident__](https://twitter.com/@alien_resident) - Twitter     
+              [__alienresident__](https://github.com/alienresident) - Github    
+              [__Mark Reilly__](http://www.linkedin.com/in/markareilly/) - LinkedIn   
+              
+
+              <aside class="notes">Background How to get in Touch</aside>
+            </script>
+          </section>
+          
+        </section>
+
+        <section>
+
           <section data-markdown>
             <script type="text/template">
               ## Background
-              
+
               ### A Common Scenario <!-- .element: class="fragment" -->
               A web designer or developer is tasked with adding the institutional branding and colors to a vendor’s software. <!-- .element: class="fragment" -->
 
+              <aside class="notes">Background [down]
+              Most software products these days are created with this in mind: Allowing you to add some lines of CSS and an image. It’s usually straight forward. Find (and skim) the documentation and add the styles and images.
+              </aside>
             </script>
-            <aside class="notes">Background [down]
-              Most software products these days are created with this in mind: Allowing you to add some lines of CSS and an image. It’s usually straight forward. Find (and skim) the documentation and add the styles and images. </aside>
           </section>
 
           <section data-markdown>
             <script type="text/template">
               ## Background _contd_
-              
+
               ### A Uncommon Scenario <!-- .element: class="fragment" -->
 
               * Researching Users Needs <!-- .element: class="fragment" -->
@@ -180,153 +183,163 @@
               * Testing to see If Users Achieve their Goals <!-- .element: class="fragment" -->
               * and Iterating <!-- .element: class="fragment" -->
           
+              <aside class="notes">Background [down]
+            Designers are involved in researching user needs, finding users problems, designing solutions to these problems, working with developers to build these solutions, testing to see if these solutions help users achieve their goals and iterating. 
+              </aside>
             </script>
-            <aside class="notes">Background [down]
-            Designers are involved in researching user needs, finding users problems, designing solutions to these problems, working with developers to build these solutions, testing to see if these solutions help users achieve their goals and iterating. </aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Background _contd_
-              
+
               ### How was the Product Selected? <!-- .element: class="fragment" -->
 
               * Project Requirements were Drawn Up <!-- .element: class="fragment" -->
               * RFPs were Solicited from a Small Pool of Candidates  <!-- .element: class="fragment" -->
               * Selection is Based on Budget and their Sales Pitch <!-- .element: class="fragment" -->
           
+              <aside class="notes">Background [down]</aside>
             </script>
-            <aside class="notes">Background [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Background _contd_
-              
+
               ### The Result of this Broken Process? <!-- .element: class="fragment" -->
-              
+
               A product:   <!-- .element: class="fragment" -->    
-              
+
               <li class="fragment"><span class="fragment grow">P</span>retty <span class="fragment grow">I</span>nterface <span class="fragment grow">G</span>raphics</li>
               <li class="fragment"><span class="fragment grow">P</span>reviously <span class="fragment grow">I</span>nstalled by another <span class="fragment grow">G</span>roup</li>
               <li class="fragment"><span class="fragment grow">P</span>rioritized <span class="fragment grow">I</span>ntegrations over <span class="fragment grow">G</span>oals</li>
               <li class="fragment"><span class="fragment grow">P</span>oorly <span class="fragment grow">I</span>mplemented <span class="fragment grow">G</span>UI</li>
 
             </script>
-            <aside class="notes">Background [down]
-            What you’re left with is ... a P.I.G. </aside>
+
+              <aside class="notes">Background [down]
+                What you’re left with is ... a P.I.G.
+              </aside>
+            </script>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Background _contd_
-              
+
               ### Then you’re Tasked <!-- .element: class="fragment" -->
               To ‘tart’ up the product by adding your institution’s branding. <!-- .element: class="fragment" -->
           
+              <aside class="notes">What you’ll Learn [down]</aside>
             </script>
-            <aside class="notes">What you’ll Learn [down]</aside>
           </section>
           
           <section data-background="#000100">
             <video class="stretch" data-autoplay src="images/videos/Miss_Piggy_Joan_Rivers_Lipstick.mp4"></video>
             <!--img class="stretch" src="images/Miss_Piggy_Joan_Rivers_Lipstick.jpeg"-->
-            
+
             <p>
               <span class="fragment">The Muppets Take Manhattan - 1984 <em>(TriStar Pictures)</em> <a href="http://www.youtube.com/watch?v=XhbF5u9yMkU">Youtube</a></span>
             </p>
+
             <aside class="notes"> 
               So, when I google this last week I learnt that there was a rivalry between Miss Piggy and Joan Rivers. It’s all on the HSN and youtube. 
               [down]
             </aside>
-					</section>
+          </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Aftermath: Unhappy users
-            
+
               * The system doesn’t meet their needs <!-- .element: class="fragment" --> 
               * Users aren’t satisfied <!-- .element: class="fragment" -->
-              
+
               * You’re frustrated <!-- .element: class="fragment" -->
                 * You’re unable to get the vendor to change things without additional funds <!-- .element: class="fragment" -->
                 * You’re not in control of what get’s prioritized <!-- .element: class="fragment" -->
         
             </script>
           </section>
+          
         </section>
                   
         <section>
+          
           <section data-markdown>
             <script type="text/template">
               ## How Can We Change this Cycle?
-            
+
               Selecting Open Source products is a good start. <!-- .element: class="fragment" -->
         
+              <aside class="notes">How Can We Change this Cycle? [down]</aside>
             </script>
-            <aside class="notes">How Can We Change this Cycle? [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Why Open Source is Different
-            
+
               <li class="fragment"><em>In theory</em> you can see the code and make changes</li>
               <li class="fragment"><em>In practice</em> this is not always that straight forward</li> 
               <li class="fragment">A certain amount of technical expertise is need:</li> 
               <li class="fragment">internal resource or a hired specialist</li>
         
+              <aside class="notes">Why Open Source is Different [down]</aside>
             </script>
-            <aside class="notes">Why Open Source is Different [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Why Open Source is Different
-            
+
               <blockquote class="fragment"><span class="fragment">... “free software” is a matter of liberty, not price.</span> <span class="fragment">... you should think of “free” as in “free speech,” not as in “free beer”.</span></blockquote>  
-              
+
               <span class="fragment"><a href="http://www.gnu.org/philosophy/free-sw.html">What is free software?</a> gnu.org</span> 
         
+              <aside class="notes">Why Open Source is Different [down]</aside>
             </script>
-            <aside class="notes">Why Open Source is Different [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Why Open Source is Different
-            
+
               <blockquote class="fragment">“Free as in kittens”</blockquote>  
-              
+
               <img width="700" height="475" src="images/Kittens-messy.jpg" alt="Mark Reilly" class="fragment">
-              
+
               <span class="fragment"><a href="http://www.omgsocute.com/2010/08/12/messy-kittens/">OMGSoCute.com</a></span> 
         
+              <aside class="notes">Why Open Source is Different [down]</aside>
             </script>
-            <aside class="notes">Why Open Source is Different [down]</aside>
           </section>
+          
         </section>
         
         <section>
+          
           <section data-markdown>
             <script type="text/template">
               ## Sakai to Replace BlackBoard <!-- .element: class="fragment" -->
-            
+
               NYU decided to move from BlackBoard to Sakai in the Fall 2011. <!-- .element: class="fragment" -->
               <img width="240" height="160" src="images/sakai-logo.png" alt="Sakai Logo" class="fragment">
               <img width="480" height="160" src="images/NYUClasses-logo.png" alt="NYU Classes logo" class="fragment">
+
+              <aside class="notes">Sakai to Replace BlackBoard [down]
+              Bringing it back to my recent experience...
+              I was tasked with adding our branding to Sakai and make NYU Classes.           
+              </aside>
             </script>
-            <aside class="notes">Sakai to Replace BlackBoard [down]
-            Bringing it back to my recent experience...
-            I was tasked with adding our branding to Sakai and make NYU Classes.           
-          </aside>
           </section>
           
-           <section data-background="images/sakai-profile.png"  data-background-color="#999999"  data-background-size="1024px 576px"></section> 
+          <section data-background="images/sakai-profile.png"  data-background-color="#999999"  data-background-size="1024px 576px"></section> 
           
           <section data-background="images/nyuclasses-original-profile.png"  data-background-color="#999999"  data-background-size="1024px 576px">
-            
-              <aside class="notes">Sakai to Replace BlackBoard [down]
+
+            <aside class="notes">Sakai to Replace BlackBoard [down]
               After working with Drupal and being able to theme any part of the site. I remember being appalled at how little I easily change. However, for the sake of the usability testing, I wanted to change the current design as little as possible up front and see what the most important issues were.            
             </aside>
           </section>
@@ -338,7 +351,7 @@
           <section data-markdown>
             <script type="text/template">
               ## Usability Testing
-            
+
               ### Typical Testing Schedule <!-- .element: class="fragment" -->
 
               * 3-5 users per test <!-- .element: class="fragment" -->
@@ -347,20 +360,19 @@
               * bathroom break <!-- .element: class="fragment" -->
               * connectivity issues <!-- .element: class="fragment" -->
         
-            </script>
-            <aside class="notes">Usability Testing [down]
+              <aside class="notes">Usability Testing [down]
  
-            We decided to do some usability testing while we were in the pilot. We wanted to know 
-            how the faculty — our core user group — would do with the new system.
+              We decided to do some usability testing while we were in the pilot. We wanted to know how the faculty — our core user group — would do with the new system.
 
-            We like Friday mornings for testing: 3 sessions from 10am-1pm
-            </aside>
+              We like Friday mornings for testing: 3 sessions from 10am-1pm
+              </aside>
+            </script>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Usability Testing
-            
+
               ### Breakdown of a 45 minute test  <!-- .element: class="fragment" -->
 
               * 5 mins introduction <!-- .element: class="fragment" -->
@@ -368,74 +380,56 @@
               * 20–25 mins script based test <!-- .element: class="fragment" -->
               * 5 mins feedback of the test <!-- .element: class="fragment" -->
         
-            </script>
-            <aside class="notes">Usability Testing [down]
+              <aside class="notes">Usability Testing [down]
              
-             We wrote usability test scripts that were tasked focused. In which we asked the test faculty to do a number of tasks that were based on the tools. 
-           </aside>
-          </section>
-
-          <section data-markdown>
-            <script type="text/template">
-              ## Usability Testing
-            
-              ### Breakdown of a 45 minute test  <!-- .element: class="fragment" -->
-
-              * 5 mins introduction <!-- .element: class="fragment" -->
-              * 10 mins of free exploration and general questions <!-- .element: class="fragment" -->
-              * 20–25 mins script based test <!-- .element: class="fragment" -->
-              * 5 mins feedback of the test <!-- .element: class="fragment" -->
-        
+              We wrote usability test scripts that were tasked focused. In which we asked the test faculty to do a number of tasks that were based on the tools. 
+             </aside>
             </script>
-            <aside class="notes">Usability Testing [down]
-             
-             We wrote usability test scripts that were tasked focused. In which we asked the test faculty to do a number of tasks that were based on the tools. 
-           </aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Usability Testing
-            
+
               ### Our Criteria <!-- .element: class="fragment" -->
 
               * Never used NYU Classes/Sakai <!-- .element: class="fragment" -->
               * In their own environment — not in a usability lab <!-- .element: class="fragment" -->
               * Familiarity with other online class courseware <!-- .element: class="fragment" -->
         
-            </script>
-            <aside class="notes">Usability Testing [down]
+              <aside class="notes">Usability Testing [down]
              
-            We chose to conduct <em>remote usability tests</em>. 
-           </aside>
+              We chose to conduct <em>remote usability tests</em>. 
+              </aside>
+            </script>
           </section>
           
           <section data-background="images/rosenfeldmedia-remotetesting.png"  data-background-color="#ffffff"  data-background-size="1024px 768px">       
-              
+
               <!--img src="images/rosenfeldmedia-remotetesting.png" alt="Remote Testing" width="1024" height="768"-->
                   
             <aside class="notes">Usability Testing [down]
-             We used GoToMeeting to do the remote tests
+                We used GoToMeeting to do the remote tests
 
-           </aside>
+            </aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Remote Usability Testing
-            
+
               ### Things to Remember  <!-- .element: class="fragment" -->
 
-              * describe how the test works <!-- .element: class="fragment" -->
-              * get verbal permission to record (voice and screen) <!-- .element: class="fragment" -->
-              * remind Participant to close private documents <!-- .element: class="fragment" -->
-              * passed presenter control to the Participant <!-- .element: class="fragment" -->
+              * Describe how the test works <!-- .element: class="fragment" -->
+              * Obtain verbal permission to record (voice and screen) <!-- .element: class="fragment" -->
+              * Remind Participant to close private documents <!-- .element: class="fragment" -->
+              * Pass ‘presenter control’ to the Participant <!-- .element: class="fragment" -->
         
-            </script>
-            <aside class="notes">Usability Testing [down]
+              <aside class="notes">Usability Testing [down]
              
-             The Participant, the Researcher, and the Observers in the observation room logged into GoToMeeting. The Researcher described how the test works, asked the Participant to think out loud, and got verbal permission to record their screen and voice. The Researcher asked the Participant to close any windows that they didn’t want to be seen and then passed presenter control to the Participant.  
-           </aside>
+              The Participant, the Researcher, and the Observers in the observation room logged into GoToMeeting. The Researcher described how the test works, asked the Participant to think out loud, and got verbal permission to record their screen and voice. The Researcher asked the Participant to close any windows that they didn’t want to be seen and then passed presenter control to the Participant.  
+              </aside>
+            </script>
           </section>
           
         </section>
@@ -445,18 +439,18 @@
           <section data-markdown>
             <script type="text/template">
               ## Communicating the Results
-            
+
               * We done our usability tests! <!-- .element: class="fragment" -->
               * We found issues! <!-- .element: class="fragment" -->
               * We have solutions! <!-- .element: class="fragment" -->
               * Now what? <!-- .element: class="fragment" -->
         
+              <aside class="notes">Communicating the Results? [down]
+
+              Observe the users pain, we diagnosed the problems, we need to implement solutions
+
+              </aside>
             </script>
-            <aside class="notes">Communicating the Results? [down]
-            
-            Observe the users’ pain, we diagnosed the problems, we need to implement solutions
-            
-            </aside>
           </section>
 
           <section data-markdown>
@@ -464,37 +458,37 @@
              ## What to Fix?
              
               > “When fixing problems, always do the least you can.” <!-- .element: class="fragment" -->
-              
+
               <span></span>
-              
+
               > “Focus Ruthlessly on Fixing the Most Serious Problems First” <!-- .element: class="fragment" -->
-              
+
               Steve Krug,<!-- .element: class="fragment" --> _Rocket Surgery Made Easy_ <!-- .element: class="fragment" -->
 
-            </script>
-            <aside class="notes">Communicating the Results? [down]
-            Steve Krug — of _Don’t Make Me Think_ and _Rocket Surgery Made Easy_  fame
+              <aside class="notes">Communicating the Results? [down]
+              Steve Krug — of _Don’t Make Me Think_ and _Rocket Surgery Made Easy_  fame
              
-             If there’s one issue that’s tripping up your users: what’s an easy fix?
-            </aside>
+              If there’s one issue that’s tripping up your users: what’s an easy fix?
+              </aside>
+            </script>
           </section>
                     
           <section data-markdown>
             <script type="text/template">
               ## Explaining the Results 
-            
+
               ### Categorization <!-- .element: class="fragment" -->
-              
+
               * Heuristics <!-- .element: class="fragment" -->
                 * Measuring <!-- .element: class="fragment" -->
                 * Weighting <!-- .element: class="fragment" -->
                 
-            </script>
-            <aside class="notes">Explaining the Results [down]
-            
+              <aside class="notes">Explaining the Results [down]
+
               Unsurprisingly, we found a lot of usability issues. Many of them were with specific tools but there were a quite number of issues with just navigating the system. We decided they were a higher priority because they were universal issues and not tool specific or role based (i.e. instructor).
-            
-            </aside>
+
+              </aside>
+            </script>
           </section>
           
           <section data-markdown>
@@ -506,20 +500,20 @@
               * Show don’t tell <!-- .element: class="fragment" -->
               * Present solutions <!-- .element: class="fragment" -->
                 
-            </script>
-            <aside class="notes">Communicating the Results? [down]
-            
-            The next step is important. You need to both; explain the issues, and provide possible solutions. It’s important to generate awareness and excitement about the issues. It’s also vital to tailor you message to your audience. If this is your organization first time doing usability testings;  you need to guide them through the user experience process. 
+              <aside class="notes">Communicating the Results? [down]
 
-            Present solutions this is really what designer is — a problem solver
-            
-            </aside>
+              The next step is important. You need to both; explain the issues, and provide possible solutions. It’s important to generate awareness and excitement about the issues. It’s also vital to tailor you message to your audience. If this is your organization first time doing usability testings;  you need to guide them through the user experience process. 
+
+              Present solutions this is really what designer is — a problem solver
+
+              </aside>
+            </script>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Quick Fixes
-            
+
               ### What can you do in the short term?  <!-- .element: class="fragment" -->
 
               * Clarify the language? <!-- .element: class="fragment" -->
@@ -527,16 +521,16 @@
               * Add support documentation? <!-- .element: class="fragment" -->
               * file bug reports? <!-- .element: class="fragment" -->
         
+              <aside class="notes">Quick Fixes? [down]
+             
+              Yes, in some ways these are bandaids?
+
+              A bandaid is an inelegant design solution. But as a parent of a toddler I know that it helps to acknowledge that there is a booboo.  
+
+              It’s better than doing nothing and in many cases this may be all you can do.
+             
+              </aside>
             </script>
-            <aside class="notes">Quick Fixes? [down]
-             
-             Yes, in some ways these are bandaids?
-
-             A bandaid is an inelegant design solution. But as a parent of a toddler I know that it helps to acknowledge that there is a booboo.  
-
-             It’s better than doing nothing and in many cases this may be all you can do.
-             
-           </aside>
           </section>
           
         </section>
@@ -546,53 +540,53 @@
           <section data-markdown>
             <script type="text/template">
               ## Beyond Quick Fixes
-            
+
               ### A Gut Renovation <!-- .element: class="fragment" -->
 
               Create a reusable, well organized, and easily extendable UI.  <!-- .element: class="fragment" -->
-              
+
               * Establish a new foundation <!-- .element: class="fragment" -->
               * Remove old CSS hacks <!-- .element: class="fragment" -->
               * Use a CSS preprocessor <!-- .element: class="fragment" -->
               * Organize and modularize the styles <!-- .element: class="fragment" -->
               
         
+              <aside class="notes">Beyond Quick Fixes? [down]
+             
+              I was lucky in so far as I could go beyond quick fixes. I was able to start over to build the user interface from scratch. In the initial skinning and when I added some quick fixes I knew that there were a lot of issues with the Sakai User Interface codebase. I was very unhappy with how the CSS was organized. It was confusing, full of hacks that were no longer needed, and difficult to override. I thought we really to create a new foundational user interface and build off of that. We need a new system that took advantage of modern web development technologies especially a CSS preprocessor. 
+             
+              </aside>
             </script>
-            <aside class="notes">Beyond Quick Fixes? [down]
-             
-             I was lucky in so far as I could go beyond quick fixes. I was able to start over to build the user interface from scratch. In the initial skinning and when I added some quick fixes I knew that there were a lot of issues with the Sakai User Interface codebase. I was very unhappy with how the CSS was organized. It was confusing, full of hacks that were no longer needed, and difficult to override. I thought we really to create a new foundational user interface and build off of that. We need a new system that took advantage of modern web development technologies especially a CSS preprocessor. 
-             
-           </aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Beyond Quick Fixes
-            
+
               ### Organizing Chaos <!-- .element: class="fragment" -->
 
               > We’re not designing pages, we’re designing systems of components.  <!-- .element: class="fragment" -->
-              
+
               
               __Stephen Hay__ <!-- .element: class="fragment" -->
               
         
+              <aside class="notes">Beyond Quick Fixes? [down]
+             
+              In the past, when we designed web pages, we usually started by converting Photoshop mockups to HTML and CSS. We would start in the top left corner and work down the page. We may start with the homepage design or if we were more adventurous we’d start with an interior content page. This pattern is often referred to as designing from the outside in. 
+
+              This worked fairly well with simple static sites. There were only a few templates to worry about. But with more complex content management system this pattern started to be less useful. Often there were pages or variations of pages that were not captured by the initial mockups. The markup was sufficiently different and our styles were too closely coupled that it started to break. We ended up with a lot of half styled pages. In more dynamic system components may be on a page based on context. We can’t always know what’s forsee what's going to be on every page. 
+
+              We now realize that we need to design web systems and not web pages. We need to design from the inside out not the outside in. Design the small discrete chunks of functionality that comprise parts of our sites. In such a way they can be on any part of  our site and not tied to one location on a particular page.      
+             
+              </aside>
             </script>
-            <aside class="notes">Beyond Quick Fixes? [down]
-             
-             In the past, when we designed web pages, we usually started by converting Photoshop mockups to HTML and CSS. We would start in the top left corner and work down the page. We may start with the homepage design or if we were more adventurous we’d start with an interior content page. This pattern is often referred to as designing from the outside in. 
-
-             This worked fairly well with simple static sites. There were only a few templates to worry about. But with more complex content management system this pattern started to be less useful. Often there were pages or variations of pages that were not captured by the initial mockups. The markup was sufficiently different and our styles were too closely coupled that it started to break. We ended up with a lot of half styled pages. In more dynamic system components may be on a page based on context. We can’t always know what’s forsee what's going to be on every page. 
-
-             We now realize that we need to design web systems and not web pages. We need to design from the inside out not the outside in. Design the small discrete chunks of functionality that comprise parts of our sites. In such a way they can be on any part of  our site and not tied to one location on a particular page.      
-             
-           </aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Beyond Quick Fixes
-            
+
               ### Designing Systems <!-- .element: class="fragment" -->
 
               <li class="fragment"> _Brad Frost_ [Atomic Design](http://bradfrostweb.com/blog/post/atomic-web-design/) <!-- .element: class="fragment" --> <!-- .element: class="fragment" -->
@@ -601,111 +595,108 @@
               <li class="fragment"> _Samantha Warren_ [Style Tiles](http://styletil.es/) <!-- .element: class="fragment" -->
               <li class="fragment"> _Dan Mall_  [Element Collages](http://danielmall.com/articles/rif-element-collages/) <!-- .element: class="fragment" -->
 
-              
-        
-            </script>
-            <aside class="notes">Beyond Quick Fixes? [down]
-             
-             One common pattern is to design using a component based style guide first and worry about layout at a later stage. This makes even more sense in the age of responsive of design. We no longer have an authoritative layout. Elements will shift, grow and shrink, depending on their context. We can no longer design under the mass delusion of a canonical screen size; be it 960, or 800 x 600 before it. 
+              <aside class="notes">Beyond Quick Fixes? [down]
+
+              One common pattern is to design using a component based style guide first and worry about layout at a later stage. This makes even more sense in the age of responsive of design. We no longer have an authoritative layout. Elements will shift, grow and shrink, depending on their context. We can no longer design under the mass delusion of a canonical screen size; be it 960, or 800 x 600 before it. 
    
-             This gives developers a freedom to do what they do best and not worry about design decisions. If a developer his creating the User Interface then someone has not thought this project through. 
+              This gives developers a freedom to do what they do best and not worry about design decisions. If a developer his creating the User Interface then someone has not thought this project through. 
                    
-             
-           </aside>
+              </aside>
+            </script>
            
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Beyond Quick Fixes
-            
+
               ### Styleguide driven development <!-- .element: class="fragment" -->
               ### Living Styleguide  <!-- .element: class="fragment" -->
-              
+
               * Reusable <!-- .element: class="fragment" -->
               * Modular <!-- .element: class="fragment" -->
               * DRY <!-- .element: class="fragment" -->
               * A Manual (RTFM) <!-- .element: class="fragment" -->
         
-            </script>
-            <aside class="notes">Beyond Quick Fixes? [down]
+              <aside class="notes">Beyond Quick Fixes? [down]
    
-             This gives developers a freedom to do what they do best and not worry about design decisions. If a developer his creating the User Interface then someone has not thought this project through.
+              This gives developers a freedom to do what they do best and not worry about design decisions. If a developer his creating the User Interface then someone has not thought this project through.
              
-             Don’t get me wrong, developers make design decisions everyday, when it comes to code. But they shouldn’t have to make interface or interactions design decisions. I’ll always welcome input and ideas from every member of the team. I love working with developers who think about the users interaction, I seek them out, but I don’t expect them to be responsible for these kinds of decisions. Alan Cooper discussed this at length in _Inmates Are Running the Asylum_ back in 1999. 
+              Don’t get me wrong, developers make design decisions everyday, when it comes to code. But they shouldn’t have to make interface or interactions design decisions. I’ll always welcome input and ideas from every member of the team. I love working with developers who think about the users interaction, I seek them out, but I don’t expect them to be responsible for these kinds of decisions. Alan Cooper discussed this at length in _Inmates Are Running the Asylum_ back in 1999. 
 
-             With style guide driven development we can divided our design into reusable components or modules. As far as designing the User Interface. I am using a CSS preprocessor, SASS in this case, so I can break the styles into discrete files that do just one thing.
+              With style guide driven development we can divided our design into reusable components or modules. As far as designing the User Interface. I am using a CSS preprocessor, SASS in this case, so I can break the styles into discrete files that do just one thing.
                    
-           </aside>
+              </aside>
+            </script>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Beyond Quick Fixes
-            
+
               ### Using modular design practices
 
               > There are only two hard things in Computer Science: cache invalidation and naming things. <!-- .element: class="fragment" -->
 
               -- Phil Karlton <!-- .element: class="fragment" -->
         
-            </script>
-            <aside class="notes">Beyond Quick Fixes? [down]
-              
-             Naming things is hard. Organizing a UI system is hard too. Rather than reinvent the wheel I looked at what others were doing and chose the one that made most sense to me and the projects’ needs.
+              <aside class="notes">Beyond Quick Fixes? [down]
+
+              Naming things is hard. Organizing a UI system is hard too. Rather than reinvent the wheel I looked at what others were doing and chose the one that made most sense to me and the projects’ needs.
                    
-           </aside>
+              </aside>
+            </script>
           </section>
        
-       </section>
+        </section>
        
-       <section>   
+        <section>   
           
           <section data-markdown>
             <script type="text/template">
               ## SASS
-              
+
               ### Syntactically Awesome StyleSheets <!-- .element: class="fragment" -->
-              
+
               * Variables <!-- .element: class="fragment" -->
               * Mixins <!-- .element: class="fragment" -->
               * Extends <!-- .element: class="fragment" -->
               * Nesting <!-- .element: class="fragment" -->
               * @import & Partials <!-- .element: class="fragment" -->
-              
+
               learn more at <!-- .element: class="fragment" --> [sass-lang.com/guide](http://sass-lang.com/guide) <!-- .element: class="fragment" -->
-              
+
+              <aside class="notes">Getting SASSY: [down]</aside>
             </script>
-            <aside class="notes">Getting SASSY: [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## SASS _contd_
-              
+
               ### Variables <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>$instution-color: #fc3;
-              
+
               a {
                 color: $instution-color;
               }
-              
+
               nav {
                 background-color: $instution-color;
               }
               </code></pre>
-              
+
+              <aside class="notes">SASSY: Variables [down]</aside>
             </script>
-            <aside class="notes">SASSY: Variables [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## SASS _contd_
-              
+
               ### Mixins <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>@mixin default-type-size {
                 font-size: 16px;
                 line-height: 1.5em;
@@ -727,17 +718,17 @@
                 line-height: 1.5em;
               }
               </code></pre>
-              
+
+              <aside class="notes">SASSY: Mixins [down]</aside>
             </script>
-            <aside class="notes">SASSY: Mixins [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## SASS _contd_
-              
+
               ### Mixins <!-- .element: class="fragment" -->  _(arguments)_ <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>@mixin default-type-size($color) {
                 font-size: 16px;
                 color: $color;
@@ -759,17 +750,17 @@
                 color: #eeeeee;
               }
               </code></pre>
-              
+
+              <aside class="notes">SASSY: Mixins() [down]</aside>
             </script>
-            <aside class="notes">SASSY: Mixins() [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## SASS _contd_
-              
+
               ### Mixins<!-- .element: class="fragment" -->  _(more arguments)_ <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>@mixin type-size($size, $color) {
                 font-size: $size;
                 color: $color;
@@ -791,17 +782,17 @@
                 color: #eeeeee;
               }
               </code></pre>
-              
+
+              <aside class="notes">SASSY: Mixins() [down]</aside>
             </script>
-            <aside class="notes">SASSY: Mixins() [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## SASS _contd_
-              
+
               ### Extends <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>%default-type-size {
                 font-size: 16px;
                 line-height: 1.5em;
@@ -819,17 +810,17 @@
                 line-height: 1.5em;
               }
               </code></pre>
-              
+
+              <aside class="notes">SASSY: Extends [down]</aside>
             </script>
-            <aside class="notes">SASSY: Extends [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## SASS _contd_
-              
+
               ### Extends <!-- .element: class="fragment" --> _contd_ <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>%default-type-size {
                 font-size: 16px;
                 line-height: 1.5em;
@@ -851,16 +842,17 @@
                 color: #eeeeee;
               }
               </code></pre>
-              
+
+              <aside class="notes">SASSY: Extends more 
+              Great for Buttons and Messages [down]
+              </aside>
             </script>
-            <aside class="notes">SASSY: Extends more 
-              Great for Buttons and Messages [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## SASS _contd_
-              
+
               ### Nesting<!-- .element: class="fragment" -->
               <pre class="fragment"><code contenteditable>nav {
 
@@ -880,23 +872,22 @@
                 padding: 0;
                 list-style: none;
               }
-              
+
               nav ul li {
                 display: inline-block;
               }
               </code></pre>
-              
+
+              <aside class="notes">SASSY: Extends more Great for Buttons and Messages [down]</aside>
             </script>
-            <aside class="notes">SASSY: Extends more 
-              Great for Buttons and Messages [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## SASS _contd_
-              
+
               ### @import & Partials<!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>// _reset.scss
               html,
               body,
@@ -915,7 +906,7 @@
                 background-color: #efefef;
               }
               </code></pre>
-              
+
               <pre class="fragment"><code contenteditable>/* base.css */
               html, body, ul, ol {
                 margin: 0;
@@ -926,22 +917,21 @@
                 background-color: #efefef;
               }
               </code></pre>
-              
+
+              <aside class="notes">SASSY: @import & Partials [down]</aside>
             </script>
-            <aside class="notes">SASSY: @import & Partials [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## SASS _contd_
-              
+
               Sass while powerful can be misused. You can create brittle, inflexible, and unmaintainable CSS with Sass as with vanilla CSS. <!-- .element: class="fragment" -->
-              
+
               What you need is an architecture that is modular and scalable. <!-- .element: class="fragment" -->
-              
-              
+
+              <aside class="notes">SASSY: Conclusion [next]</aside>
             </script>
-            <aside class="notes">SASSY: Conclusion [next]</aside>
           </section>
           
         </section>
@@ -951,25 +941,25 @@
           <section data-markdown>
             <script type="text/template">
               ## SMACSS
-              
+
               ### Scalable and Modular Architecture for CSS <!-- .element: class="fragment" -->
-              
+
               <img src="images/SMACSS-book-cover.png" alt="Scalable and Modular Architecture for CSS Book" height="328" width="247"> <!-- .element: class="fragment" -->
-              
+
               By Jonathan Snook a web developer and designer, formerly at Yahoo!, He worked on the redesign of Yahoo! mail <!-- .element: class="fragment" -->
-              
+
               learn more at <!-- .element: class="fragment" --> [smacss.com](https://smacss.com) <!-- .element: class="fragment" -->
-              
+
+              <aside class="notes">Getting SMACKY: [down]</aside>
             </script>
-            <aside class="notes">Getting SMACKY: [down]</aside>
           </section>
 
           <section data-markdown>
             <script type="text/template">
-              ## SMACSS
-              
+              ## SMACSS _contd_
+
               At the very core of SMACSS is categorization <!-- .element: class="fragment" -->
-              
+
               There are five types of categories: <!-- .element: class="fragment" -->
 
               1. Base <!-- .element: class="fragment" -->
@@ -977,138 +967,138 @@
               3. Module <!-- .element: class="fragment" -->
               4. State <!-- .element: class="fragment" -->
               5. Theme <!-- .element: class="fragment" -->
-              
+
+              <aside class="notes">Getting SMACSS: [down]</aside>
             </script>
-            <aside class="notes">Getting SMACSS: [down]</aside>
           </section>          
           
 
           <section data-markdown>
             <script type="text/template">
-              ## SMACSS
-              
+              ## SMACSS _contd_
+
               ### Base <!-- .element: class="fragment" -->
-              
+
               Base rules are the defaults. <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>html, body, form { 
                 margin: 0; 
                 padding: 0; 
               }
-              
+
               input[type="text"] { 
                 border: 1px solid #999;
               }
-              
+
               a { 
                 color: #039; 
               }
-              
+
               a:hover { 
                 color: #03C; 
               }
               </code></pre>
-              
-            </script>
-            <aside class="notes">Getting SMACSS: Base 
+
+              <aside class="notes">Getting SMACSS: Base 
             Essentially, a base style says that wherever this element is on the page, it should look like this.
             [down]</aside>
+            </script>
           </section>
           
 
           <section data-markdown>
             <script type="text/template">
-              ## SMACSS
-              
+              ## SMACSS _contd_
+
               ### Layout <!-- .element: class="fragment" -->
-              
+
               Layout rules divide the page into sections. Layouts hold one or more modules together. <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>#article {
                 width: 80%;
                 float: left;
               }
-              
+
               #sidebar {
                 width: 20%;
                 float: right;
               }
-              
+
               .l-fixed #article {
                 width: 600px;
               }
-              
+
               .l-fixed #sidebar {
                 width: 200px;
               }
               </code></pre>
-              
+
+              <aside class="notes">Getting SMACSS: Layout [down]</aside>
             </script>
-            <aside class="notes">Getting SMACSS: Layout [down]</aside>
           </section>
 
           <section data-markdown>
             <script type="text/template">
-              ## SMACSS
-              
+              ## SMACSS _contd_
+
               ### Module <!-- .element: class="fragment" -->
-              
+
               Modules are the reusable, modular parts of our design. They are the callouts, the sidebar sections, the product lists and so on. <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>.pod {
                 width: 100%;
                 background: #ddd;
               }
-              
+
               .pod input[type=text] {
                 width: 50%; 
                 border: 1px solid #666;
               }
               </code></pre>
-              
+
+              <aside class="notes">Getting SMACSS: Module [down]</aside>
             </script>
-            <aside class="notes">Getting SMACSS: Module [down]</aside>
           </section>
 
           <section data-markdown>
             <script type="text/template">
-              ## SMACSS
-              
+              ## SMACSS _contd_
+
               ### Module  <!-- .element: class="fragment" --> _contd_ <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>.pod {
                 width: 100%;
                 background: #ddd;
               }
-              
+
               .pod input[type=text] {
                 width: 50%; 
                 border: 1px solid #666;
               }
-              
+
               .pod-callout {
                 width: 200px;
               }
-              
+
               .pod-callout input[type=text] {
                 width: 180px;
               }</code></pre>
-              
+
               <pre class="fragment"><code contenteditable>&lt;div class=&quot;pod pod-callout&quot;&gt; ... &lt;/div&gt;
               </code></pre>
-              
+
+              <aside class="notes">Getting SMACSS: Module [down]</aside>
             </script>
-            <aside class="notes">Getting SMACSS: Module [down]</aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
-              ## SMACSS
-              
+              ## SMACSS _contd_
+
               ### State<!-- .element: class="fragment" -->
-              
+
               State rules are ways to describe how our modules or layouts will look when in a particular state. Is it hidden or expanded? Is it active or inactive? <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>.tab {
                 background-color: purple;
                 color: white;
@@ -1119,19 +1109,19 @@
                 color: black;
               }
               </code></pre>
-              
+
+              <aside class="notes">Getting SMACSS: State [down]</aside>
             </script>
-            <aside class="notes">Getting SMACSS: State [down]</aside>
           </section>
 
           <section data-markdown>
             <script type="text/template">
-              ## SMACSS
-              
+              ## SMACSS _contd_
+
               ### Theme <!-- .element: class="fragment" -->
-              
+
               Theme rules are similar to state rules in that they describe how modules or layouts might look.  <!-- .element: class="fragment" -->
-              
+
               <pre class="fragment"><code contenteditable>/* in module-name.css */
               .mod {
                 border: 1px solid;
@@ -1142,167 +1132,156 @@
                 border-color: blue;
               }
               </code></pre>
+
+              <aside class="notes">Getting SMACSS: Theme [down]</aside>
             </script>
-            <aside class="notes">Getting SMACSS: [down]</aside>
           </section>
         
         </section>
+        
         <section>
           
           <section data-markdown>
             <script type="text/template">
-              ## Designing Web Systems
-              
-              
-              The goal is to empower designers and developers so they aren’t forced to add counter styles to the bottom of the stylesheet.   <!-- .element: class="fragment" -->
-              
-              <pre class="fragment"><code contenteditable>.maintext {
-                color: red !important;
-              }
-              </code></pre>
-            </script>
-            <aside class="notes">Getting SMACSS: [down]
-            It doesn’t matter what system you use but that you use a system. What you want to create is a consistent system that is approachable to others. The goal is to empower developers where they aren’t forced to just add counter styles to the both of your stylesheet. 
-            </aside>
-          </section>
-          
-          <section data-markdown>
-            <script type="text/template">
               ## Contributing to an Open Source Community
-              
-              The goal is to empower designers and developers so they aren’t forced to add counter styles to the bottom of the stylesheet. <!-- .element: class="fragment" -->
-              To enable them to easily change colors and branding. <!-- .element: class="fragment" -->
-              To enable them to dig in deeper and make substanial changes. <!-- .element: class="fragment" -->
 
-              To avoid this. <!-- .element: class="fragment" -->              
+              ### Goals  <!-- .element: class="fragment" -->
+              * Empower designers and developers <!-- .element: class="fragment" -->
+              * Enable them to easily change colors and branding. <!-- .element: class="fragment" -->
+              * Enable them to dig in deeper and make substanial changes. <!-- .element: class="fragment" -->
+              * To avoid this scenario. <!-- .element: class="fragment" -->
+                            
               <pre class="fragment"><code contenteditable>.maintext {
+                color: #333333;
+              }
+              [...]
+              .maintext {
                 color: red !important;
               }
               </code></pre>
+
+              <aside class="notes">Contributing to an Open Source Community [down]
+              It doesn’t matter what system you use but that you use a system. What you want to create is a consistent system that is approachable to others. The goal is to empower developers where they aren’t forced to just add counter styles to the both of your stylesheet. 
+              </aside>
             </script>
-            <aside class="notes">Contributing to an Open Source Community [down]
-            It doesn’t matter what system you use but that you use a system. What you want to create is a consistent system that is approachable to others. The goal is to empower developers where they aren’t forced to just add counter styles to the both of your stylesheet. 
-            </aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
               ## Contributing to an Open Source Community
-              
+
               ### People will generally be supportive of your efforts. <!-- .element: class="fragment" -->
-              
+
               * Get on the mailing list: get a sense of the community <!-- .element: class="fragment" -->
               * Read the FAQ and look through their documentation <!-- .element: class="fragment" -->
               * See if there’s a post on their bug list or issue queue <!-- .element: class="fragment" -->
               * If you need help; check to see if your question has been asked and answered before <!-- .element: class="fragment" -->
-              
-            </script>
-            <aside class="notes">Contributing to an Open Source Community: [down]
+
+              <aside class="notes">Contributing to an Open Source Community: [down]
             How I got more involved in the Sakai community was by getting my code reviewed by the open source community — as part of getting the new UI out to NYU — at the end of the review session I was asked to commit this back to the project. I had mentioned that in order to get the design to be responsive we would need new templates. The current ones were brittle and hard to work with. The markup had a lot of cruft that built up over the years and it made the most sense to start over. 
-             
-            </aside>
+              </aside>
+            </script>
           </section>
           
           <section data-markdown>
             <script type="text/template">
-            ## Contributing to an Open Source Community
-            
-            ### Not a developer? You can contribute in other ways.  <!-- .element: class="fragment" -->
+              ## Contributing to an Open Source Community
 
-            * Usability testing <!-- .element: class="fragment" -->
-            * QA testing <!-- .element: class="fragment" -->
-            * Documentation and writing <!-- .element: class="fragment" -->
-            * Community organization <!-- .element: class="fragment" -->
-              
+              ### Not a developer? You can contribute in many other ways.  <!-- .element: class="fragment" -->
+
+              * Usability testing <!-- .element: class="fragment" -->
+              * QA testing <!-- .element: class="fragment" -->
+              * Documentation and writing <!-- .element: class="fragment" -->
+              * Community organization <!-- .element: class="fragment" -->
+
+              <aside class="notes">Contributing to an Open Source Community: [down]
+              We decided to create new HTML 5 templates that could be optionally enabled. The new version of the software was going to be released. Long before the coding could be completed. For political and philosophical reasons. They did not want to release new features halfway during the product cycle: They wanted it to go into a major cycle (_10.0_) and not a ’dot’ release (_10.1_, or _10.x_).
+              </aside>
             </script>
-            <aside class="notes">Contributing to an Open Source Community: [down]
-
-            We decided to create new HTML 5 templates that could be optionally enabled. The new version of the software was going to be released. Long before the coding could be completed. For political and philosophical reasons. They did not want to release new features halfway during the product cycle: They wanted it to go into a major cycle (_10.0_) and not a ’dot’ release (_10.1_, or _10.x_).
-             
-            </aside>
           </section>
           
           <section data-markdown>
             <script type="text/template">
-            ## Contributing to an Open Source Community
-            
-            ### Four Levels of Community Engagement <!-- .element: class="fragment" -->
-            * Implementation <!-- .Element: Class="Fragment" -->
-            * Evangelism <!-- .Element: Class="Fragment" -->
-            * Documentation <!-- .Element: Class="Fragment" -->
-            * Support <!-- .Element: Class="Fragment" -->
-              
-            </script>
-            <aside class="notes">Getting SMACSS: [down]
+              ## Contributing to an Open Source Community
 
-            We decided to create new HTML 5 templates that could be optionally enabled. The new version of the software was going to be released. Long before the coding could be completed. For political and philosophical reasons. They did not want to release new features halfway during the product cycle: They wanted it to go into a major cycle (_10.0_) and not a ’dot’ release (_10.1_, or _10.x_).
+              ### Four Levels of Engagement with the Community <!-- .element: class="fragment" -->
+
+              * Implementation: Add your code <!-- .element: class="fragment" -->
+              * Evangelism: Tell people about it <!-- .element: class="fragment" -->
+              * Documentation: Explain it <!-- .element: class="fragment" -->
+              * Support: Answer question and fix bugs <!-- .element: class="fragment" -->
+
+              <aside class="notes">Getting SMACSS: [down]
+
+              We decided to create new HTML 5 templates that could be optionally enabled. The new version of the software was going to be released. Long before the coding could be completed. For political and philosophical reasons. They did not want to release new features halfway during the product cycle: They wanted it to go into a major cycle (_10.0_) and not a ’dot’ release (_10.1_, or _10.x_).
              
-            </aside>
+              </aside>
+            </script>
           </section>
+          
         </section>
         
+        <section>
         <section data-markdown>
           <script type="text/template">
-          ## Bringing Innovation to a Risk Averse Culture 
+            ## Bringing Innovation to a Risk Averse Culture 
           
-          ### People demand innovation but without change. <!-- .element: class="fragment" -->
+            ### People demand innovation but without change. <!-- .element: class="fragment" -->
           
-          It's a long process <!-- .element: class="fragment" -->
+            It's a long process <!-- .element: class="fragment" -->
           
-          </script>
-          <aside class="notes">Bringing Innovation to a Risk Averse Culture: [down]
-            
+            <aside class="notes">Bringing Innovation to a Risk Averse Culture: [down]
+
             It took an additional year to get the new User Interface into production. As the original deadline approached and QA work was well underway. The plug was pulled on adding the new UI to the project. The pilot had been a success. The full migration was underway and within in 3 months of the project‘s final deadline. The heads of the project were nervous and were afraid of changing things at the last minute. The wanted to tie a neat bow on the project and throw the wrap party. 
-            
+
             This to say the least was difficult for me. I had put a lot of work into the new UI and really believe it was going to be helpful and solve problems that I knew our users faced. Fortunately, I had taken a UX leadership course with Kim Goodwin. I knew that change is not easy and doesn’t happen overnight. Kim stated that it can take 3-5 years to get an organization to change. but that it’s takes a long time but it’s vital to get one project out there that can be an example to others of how UX works. I knew I had to persevere and no take no for an answer. Kim had talk a lot about culture and how this was a vital part of change. The university was a clan like structure. Lots of little groups that want to have their say and need to be listened too.   
-            
+
             It took about a month to get an outline of the concerns that the project leads had. They were wary of changing things and upsetting the users. They outlined a number of steps that needed to be done for them to see this project through. 
 
             I suggested that we follow the example of Google and Facebook and have a opt-in design preview. An ability to toggle between the new and the old interface. Allowing users to look at the new design in a time of their choosing and allowing them to submit feedback.
-          </aside>
+            </aside>
+          </script>
         </section>
         
         <section data-markdown>
           <script type="text/template">
-          ## Getting the new UI into Production 
+            ## Getting the new UI into Production 
           
-          ### Or the 12 tasks of Hercules! <!-- .element: class="fragment" -->
+            ### Or the 12 tasks of Hercules... <!-- .element: class="fragment" -->
           
-          It's was a long process <!-- .element: class="fragment" -->
+            It's was a very long process! <!-- .element: class="fragment" -->
           
-          * Design review with the group responsible for the University’s Branding and Design <!-- .element: class="fragment" -->
-          * Two technical reviews:  <!-- .element: class="fragment" -->
+            * Design review with the group responsible for the University’s Branding and Design <!-- .element: class="fragment" -->
+            * Two technical reviews:  <!-- .element: class="fragment" -->
               * with the internal front-end developers <!-- .element: class="fragment" -->
-              * with the community — Gonzalo Silverio the original Sakai portal developer — he asked for the work to be committed back to Sakai. <!-- .element: class="fragment" -->
+              * with the community — Gonzalo Silverio the original Sakai portal developer — asked for the work to be committed back to Sakai. <!-- .element: class="fragment" -->
           
-          </script>
-          <aside class="notes">Bringing Innovation to a Risk Averse Culture: [down]
-            
-            At times, I felt like a salesman demoing the same dog and pony show over and over again.   But each demo was an opportunity to make the UI better. Discussing the new user interface with these groups allowed for thoughtful discussion and feedback. Some great ideas were generated and added to the UI by these meetings. It also allowed me to build support and an informal coalition for getting this work out. Preflight usability testing  helped greatly test and confirm design hypotheses. We did some A/B testing of the new vs the old interface. We were able to recruit some faculty who had never seen the interface  and get them to try the same tasks in both.
+            <aside class="notes">Bringing Innovation to a Risk Averse Culture: [down]
+
+            At times, I felt like a salesman demoing the same dog and pony show over and over again. But each demo was an opportunity to make the UI better. Discussing the new user interface with these groups allowed for thoughtful discussion and feedback. Some great ideas were generated and added to the UI by these meetings. It also allowed me to build support and an informal coalition for getting this work out. Preflight usability testing  helped greatly test and confirm design hypotheses. We did some A/B testing of the new vs the old interface. We were able to recruit some faculty who had never seen the interface  and get them to try the same tasks in both.
              
-          </aside>
+            </aside>
+          </script>
         </section>
         
         <section data-markdown>
           <script type="text/template">
-          ## Getting the new UI into Production 
+            ## Getting the new UI into Production 
+
           
-          ### Or the 12 tasks of Hercules! <!-- .element: class="fragment" -->
+            * Two rounds of informal usability testing for fine-tuning <!-- .element: class="fragment" -->
+            * A formal A/B usability test <!-- .element: class="fragment" -->
+            * Two reviews with the faculty’s User Advisory Group. – They contributed a number of  valuable suggestions that were implemented.  <!-- .element: class="fragment" -->
+            * Two rounds of Quality Assurance testing by the NYU Classes service team  <!-- .element: class="fragment" -->
+            * Two rounds of CSS bug fixing. <!-- .element: class="fragment" -->
           
-          * Two rounds of informal usability testing for fine-tuning <!-- .element: class="fragment" -->
-          * A formal A/B usability test <!-- .element: class="fragment" -->
-          * Two reviews with the faculty’s User Advisory Group. – They contributed a number of  valuable suggestions that were implemented.  <!-- .element: class="fragment" -->
-          * Two rounds of Quality Assurance testing by the NYU Classes service team  <!-- .element: class="fragment" -->
-          * Two rounds of CSS bug fixing. <!-- .element: class="fragment" -->
-          
-          </script>
-          <aside class="notes">Bringing Innovation to a Risk Averse Culture: [down]
+            <aside class="notes">Bringing Innovation to a Risk Averse Culture: [down]
 
             We also added some code so we could find out who tried the new UI and whether or not they had it turned on or not. This allowed us to get an idea of who brought the new UI for a test drive and to know whether or not they stuck with it. It also allowed us a way to contact the users of the new UI if we needed to. 
              
-          </aside>
+            </aside>
+          </script>
         </section>
-          
           
       </section>
         
@@ -1310,113 +1289,113 @@
           
           <section data-markdown>
             <script type="text/template">
-            ## In Conclusion
+              ## In Conclusion
           
-            ### Why you need to do a Usability Test! <!-- .element: class="fragment" -->
+              ### Why you need to do a Usability Test! <!-- .element: class="fragment" -->
           
-            * Insight Into Understanding the Problem 
-            * Focus on the Users Problems and not the Technical or Aesthetic Issues
-            * Observed User Behavior Rather Than Opinion 
-            * Creates Awareness of Issues to Managers, and Developers
-            * Builds a Consensus to Solving the Issues
+              * Insight Into Understanding the Problem <!-- .element: class="fragment" -->
+              * Focus on the Users Goals not the Technical or Aesthetic Issues <!-- .element: class="fragment" -->
+              * Observed User Behavior Instead of Opinion  <!-- .element: class="fragment" -->
+              * Creates Awareness of Issues to Stakeholders <!-- .element: class="fragment" -->
+              * Builds a Consensus to Solving the Issues <!-- .element: class="fragment" -->
           
-            </script>
-            <aside class="notes">In Conclusion: [down]
+              <aside class="notes">In Conclusion: [down]
 
-              Next time you’re tasked to add institutional branding to a website. I ask you to try some usability testing first. It may be the most eye opening morning you’ll have. For me now usability testing is an essential part of design. I’ll avoid designing a user interface without planning on doing usability testing. Preferably before, during, and after the design.   
+              Next time you’re tasked to add institutional branding to a website. I ask you to try some usability testing first. It may be the most eye opening morning you’ll have. For me now usability testing is an essential part of design. I’ll avoid designing a user interface without planning on doing usability testing. Preferably before, during, and after the design. 
              
-            </aside>
+              </aside>
+            </script>
           </section>
           
           <section data-markdown>
             <script type="text/template">
-            ## In Conclusion
+              ## In Conclusion
           
-            ### Why you need to do a Usability Test! <!-- .element: class="fragment" -->
+              ### After you've Done a Usability Test! <!-- .element: class="fragment" -->
           
-            * Communicated the results: Problems and Solutions
-            * Quick wins are best
-            * Focus on the most serious problems
+              * Communicated the Results: Both Problems and Solutions <!-- .element: class="fragment" -->
+              * Quick Wins are Best <!-- .element: class="fragment" -->
+              * Focus on the Most Serious Problems First <!-- .element: class="fragment" -->
           
-            </script>
-            <aside class="notes">In Conclusion: [down]
+              <aside class="notes">In Conclusion: [down]
 
               I advocate not designing a user interface without planning on doing usability testing. Preferably before, during, and after the design.   
              
-            </aside>
+              </aside>
+            </script>
           </section>
           
           <section data-markdown>
             <script type="text/template">
-            ## In Conclusion
+              ## In Conclusion
           
-            * When possible do more
-            * Embrace open source
-            * Contribute back to the community in your own way
+              * Where Possible: do More <!-- .element: class="fragment" -->
+              * Embrace Open Source <!-- .element: class="fragment" -->
+              * Contribute Back to the Community — in Your own Way <!-- .element: class="fragment" -->
           
-            </script>
-            <aside class="notes">In Conclusion: [down]
-
-               
+              <aside class="notes">In Conclusion: [down]
              
-            </aside>
+              </aside>
+            </script>
           </section>
+          
           <section data-markdown>
             <script type="text/template">
-            ## In Conclusion
+              ## In Conclusion
           
-            * Change is hard and it takes a long time
-            * You need people on your side
-            * You should be able to prove your changes work
-            * Communication is key
-          
-            </script>
-            <aside class="notes">In Conclusion: [down]
+              * Change is Hard and it Takes Time <!-- .element: class="fragment" -->
+              * You Need to Bring People to Your Side <!-- .element: class="fragment" -->
+              * Test Your Changes: Proof is Vital <!-- .element: class="fragment" -->
+              * Communication is Key! <!-- .element: class="fragment" -->    
 
-               
+              <span></span>
+              ### Thank You! <!-- .element: class="fragment" -->    
+              
+              ### Questions? <!-- .element: class="fragment highlight" -->    
+              <aside class="notes">In Conclusion: [down]
              
-            </aside>
+              </aside>
+            </script>
           </section>
           
-          
-      </section>
+        </section>
         
-			</div>
+      </div>
+      
+    </div>
 
-		</div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    <script>
 
-		<script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+    </script>
 
-		</script>
-
-	</body>
+  </body>
 </html>
