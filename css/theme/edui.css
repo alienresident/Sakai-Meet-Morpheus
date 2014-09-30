@@ -193,7 +193,7 @@ body {
 .reveal i {
   font-family: 'open_sansitalic';
   font-style: normal; }
-.reveal h3 .fragment.grow.visible {
+.reveal li .fragment.grow.visible {
   color: #e6d499;
   font-family: 'open_sanssemibold'; }
 .reveal h1,
@@ -208,8 +208,8 @@ body {
   .reveal h2 strong,
   .reveal h3 strong {
     font-family: 'open_sans_condensedbold'; }
-.reveal .highlight-yellow {
-  color: #ffc80f; }
+.reveal .highlight {
+  color: #f0f0f0; }
 .reveal .morpheus-full {
   width: 78%;
   margin: 0 auto; }

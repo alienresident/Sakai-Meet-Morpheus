@@ -106,7 +106,7 @@ $green:     #859900;
 
 // Custom colors
 $background: #272727;
-$highlight-yellow: #ffc80f;
+$highlight: #f0f0f0;
 $text-color: #1999cc;
 $link-color: #ffc80f;
 
@@ -152,7 +152,7 @@ $headingFont: 'open_sanscondensed_light', Impact, sans-serif;
     font-style: normal;
   }
 
-  h3 .fragment.grow.visible {
+  li .fragment.grow.visible {
     color: #e6d499;
     font-family: 'open_sanssemibold';
   }
@@ -171,8 +171,8 @@ $headingFont: 'open_sanscondensed_light', Impact, sans-serif;
     }
   }
   
-  .highlight-yellow {
-    color: $highlight-yellow;
+  .highlight {
+    color: $highlight;
   }
   
   // Specific Slides
